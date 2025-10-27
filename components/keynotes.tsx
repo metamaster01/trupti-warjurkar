@@ -958,7 +958,7 @@ function CourseCard({
           className="absolute bottom-0 right-0 bg-[#945CAD] hover:bg-[#7d4a94] text-white rounded-tl-2xl font-semibold flex items-center gap-2 transition-all duration-300 shadow-lg px-3 py-2 text-xs"
           style={{ fontFamily: "'Poppins', sans-serif" }}
         >
-          <span>Enroll Now</span>
+          <span><a href="/courses">Enroll Now</a></span>
           <ArrowRight className="w-3 h-3" />
         </motion.button>
       </div>
