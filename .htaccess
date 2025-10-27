@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve real files/dirs as-is
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  Options -MultiViews
+
+  # Map /foo or /foo/ -> /foo/index.html
+  RewriteRule ^(.+?)/?$ $1/index.html [L]
+
+  DirectoryIndex index.html
+</IfModule>
