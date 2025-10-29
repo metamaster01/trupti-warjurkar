@@ -539,7 +539,7 @@ export function FooterSection() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-br from-[#190c2f] via-[#8c60b3] to-[#69386b] text-white pt-40 sm:pt-56 lg:pt-56 pb-12 overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-[#923995] via-[#7c569d] to-[#311462] text-white pt-40 sm:pt-56 lg:pt-56 pb-12 overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[160px] -z-0" />
 
