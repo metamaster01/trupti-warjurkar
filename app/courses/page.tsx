@@ -6,6 +6,8 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import { coursesData } from "@/lib/courses-data"
+import { Navigation } from "@/components/navigation"
+import { FooterSection } from "@/components/footer"
 
 export default function CoursesPage() {
   const [isMobile, setIsMobile] = useState(false)
@@ -22,7 +24,8 @@ export default function CoursesPage() {
 
   return (
     <main className="min-h-screen bg-white">
-      <section id="courses" className="py-16 lg:py-20 bg-white">
+      <Navigation />
+      <section id="courses" className="py-16 lg:py-20 bg-white mt-10">
         {/* Header */}
         <div className="px-6 lg:px-12 max-w-7xl mx-auto mb-12">
           <motion.div
@@ -60,13 +63,14 @@ export default function CoursesPage() {
           </div>
         </div>
       </section>
+      <FooterSection />
     </main>
   )
 }
 
 function CourseCard({ course }: { course: (typeof coursesData)[0] }) {
   return (
-    <Link href={`/courses/${course.id}`} className="block h-full">
+    <Link href={`/courses/${course.slug}`} className="block h-full">
       <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 flex flex-col h-full overflow-hidden border border-gray-100 hover:border-[#945CAD] cursor-pointer">
         {/* Card Content */}
         <div className="p-4 lg:p-6 flex flex-col flex-1">

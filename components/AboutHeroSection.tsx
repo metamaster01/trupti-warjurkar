@@ -88,14 +88,14 @@ export default function AboutHeroSection() {
       >
         {/* Main Content Container - REDUCED BOTTOM PADDING */}
         <div className="relative z-10 min-h-[calc(100vh-80px)]">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 md:pt-24 lg:pt-28 pb-8 md:pb-12 lg:pb-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-24 lg:pt-0 pb-8  md:pb-12 lg:pb-16">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               {/* Left Side - Text Content */}
               <motion.div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -50 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="space-y-6 md:space-y-8 text-white z-10"
+                className="space-y-6 md:space-y-8 text-white z-10 pt-12 lg:pt-0"
               >
                 {/* About me heading */}
                 <motion.h1

@@ -241,25 +241,88 @@
 
 // app/courses/[id]/page.tsx  (server component)
 // app/courses/[id]/page.tsx
-import { coursesData } from "@/lib/courses-data"
+// import { coursesData } from "@/lib/courses-data"
+// import CourseDetailPageClient from "./CourseDetailClient"
+// import { Navigation } from "@/components/navigation"
+// import { FooterSection } from "@/components/footer"
+
+// export function generateStaticParams() {
+//   return coursesData.map((course) => ({
+//     slug: course.slug,
+//   }))
+// }
+
+// export default async function Page({ params }: { params: { slug: string } | Promise<{ slug: string }> }) {
+//   const resolvedParams = await params // << important
+//   const id = resolvedParams.slug
+
+//   return (
+//     <div className="min-h-screen overflow-x-hidden bg-white">
+//       <Navigation />
+//       <CourseDetailPageClient slug={slug} />
+//       <FooterSection />
+//     </div>
+//   )
+// }
+
+
+// app/courses/[slug]/page.tsx
+import { coursesData, getCourseBySlug } from "@/lib/courses-data"
 import CourseDetailPageClient from "./CourseDetailClient"
 import { Navigation } from "@/components/navigation"
 import { FooterSection } from "@/components/footer"
 
 export function generateStaticParams() {
   return coursesData.map((course) => ({
-    id: course.id.toString(),
+    slug: course.slug,
   }))
 }
 
-export default async function Page({ params }: { params: { id: string } | Promise<{ id: string }> }) {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const slug = params.slug
+  const course = getCourseBySlug(slug)
+  if (!course) {
+    return {
+      title: "Course Not Found",
+      description: "This course does not exist.",
+    }
+  }
+  return {
+    title: course.title,
+    description: course.description,
+    alternates: { canonical: `https://yourdomain.com/courses/${course.slug}` },
+    openGraph: {
+      title: course.title,
+      description: course.description,
+      images: course.image ? [{ url: course.image }] : [],
+    },
+  }
+}
+
+export default async function Page({ params }: { params: { slug: string } | Promise<{ slug: string }> }) {
   const resolvedParams = await params // << important
-  const id = resolvedParams.id
+  const slug = resolvedParams.slug
+
+  const course = getCourseBySlug(slug)
+
+  if (!course) {
+    // You can use Next's notFound() if you want a 404 page:
+    // import { notFound } from 'next/navigation'; if (!course) notFound();
+    return (
+      <main className="min-h-screen bg-white flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">Course Not Found</h1>
+          <p className="text-gray-600">The course you're looking for doesn't exist.</p>
+        </div>
+      </main>
+    )
+  }
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-white">
       <Navigation />
-      <CourseDetailPageClient id={id} />
+      {/* pass the full course object to the client component */}
+      <CourseDetailPageClient course={course} />
       <FooterSection />
     </div>
   )
