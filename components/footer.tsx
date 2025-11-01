@@ -527,7 +527,8 @@ export function FooterSection() {
     ],
     explore: [
       { name: "Courses", href: "/courses" },
-      { name: "Speaking Reels", href: "#speaking" },
+       { name: "Featured Blogs", href: "/blogs" },
+      // { name: "Speaking Reels", href: "#speaking" },
     ],
   };
 
