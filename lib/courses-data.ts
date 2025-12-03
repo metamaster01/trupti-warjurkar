@@ -22,7 +22,7 @@
 //     description:
 //       "Master the essentials of Communication, Confidence, and Courage to express yourself effectively and powerfully in any situation.",
 //     image: "/3c-course.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "The '3C’s of Personality Development' course is a practical and empowering journey designed to help you unlock your true potential. Built around the core pillars — Communication, Confidence, and Courage — this course guides you step by step to express yourself with clarity, self-assurance, and strength. Through interactive exercises, real-life examples, and expert-led sessions, you’ll learn how to refine your speaking, boost your inner confidence, and overcome self-doubt to stand out personally and professionally.",
@@ -54,7 +54,7 @@
 //     description:
 //       "Master the essentials of Communication, Confidence, and Courage to express yourself effectively and powerfully in any situation",
 //     image: "/3c-course.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Speak to Lead is a transformative communication course designed to help you elevate your voice and presence as a leader. Through this program, you'll learn how to communicate with impact, connect with purpose, and inspire action — whether you're speaking on stage, in a boardroom, or leading your team. This comprehensive course combines practical techniques with psychological insights to build your confidence and commanding presence.",
@@ -86,7 +86,7 @@
 //     description:
 //       "Self-discovery, confidence building, grooming, and professional image.",
 //     image: "/note2.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Transform your personality and unlock your true potential. This course combines psychological principles with practical techniques to help you build unshakeable confidence, develop a powerful professional image, and create lasting impressions. Learn the science behind personality development and apply proven strategies to become the best version of yourself.",
@@ -117,7 +117,7 @@
 //     description:
 //       "Understand the psychological principles and emotional intelligence powering effective communication.",
 //     image: "/note3.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Discover the hidden psychology behind influence and persuasion. This course reveals the principles that drive human behavior and decision-making, enabling you to communicate more effectively and ethically influence others. Learn from behavioral psychology, neuroscience, and real-world case studies to master the art of influence.",
@@ -148,7 +148,7 @@
 //     description:
 //       "Advanced techniques for public speaking, persuasion, and developing a commanding personality.",
 //     image: "/note1.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Elevate your leadership game with advanced communication strategies designed for executives and senior leaders. This course focuses on developing executive presence, mastering high-stakes communication, and building the gravitas that commands respect. Learn from industry leaders and apply proven frameworks to transform your leadership impact.",
@@ -179,7 +179,7 @@
 //     description:
 //       "Boost self-awareness, empathy, and coping strategies—transforming mindsets for sustainable growth.",
 //     image: "/note2.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Build emotional resilience and master the skills that separate exceptional leaders from the rest. This masterclass combines emotional intelligence training with resilience-building techniques to help you navigate challenges, build stronger relationships, and create sustainable success. Learn to lead with empathy while maintaining your own emotional well-being.",
@@ -210,7 +210,7 @@
 //     description:
 //       "Techniques to boost self-esteem, body language, and influence.",
 //     image: "/note3.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Unlock your natural charisma and build unshakeable self-belief. This course is designed to help you overcome self-doubt, develop magnetic presence, and influence others through authentic confidence. Through practical exercises and psychological insights, you'll transform how you see yourself and how others perceive you.",
@@ -241,7 +241,7 @@
 //     description:
 //       "Professional writing, email etiquette, meeting communication, and stakeholder management.",
 //     image: "/note1.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Master the communication skills that drive business success. From crafting compelling emails to leading productive meetings and managing stakeholder relationships, this course covers all aspects of professional communication. Learn frameworks and best practices used by top organizations worldwide.",
@@ -272,7 +272,7 @@
 //     description:
 //       "Techniques for ethically persuading and influencing others in professional and personal life.",
 //     image: "/note2.png",
-//     price: 2499,
+//     price: 399,
 //     originalPrice: 5000,
 //     overview:
 //       "Learn the science and art of ethical persuasion. This course teaches you how to influence others through authentic communication, psychological principles, and proven persuasion techniques. Master the ability to inspire action while maintaining integrity and building trust.",
@@ -330,8 +330,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Master the essentials of Communication, Confidence, and Courage to express yourself effectively and powerfully in any situation.",
     image: "/3c-course.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "The '3C’s of Personality Development' course is a practical and empowering journey designed to help you unlock your true potential. Built around the core pillars — Communication, Confidence, and Courage — this course guides you step by step to express yourself with clarity, self-assurance, and strength. Through interactive exercises, real-life examples, and expert-led sessions, you’ll learn how to refine your speaking, boost your inner confidence, and overcome self-doubt to stand out personally and professionally.",
     whatYouLearn: [
@@ -363,8 +363,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Master the essentials of Communication, Confidence, and Courage to express yourself effectively and powerfully in any situation",
     image: "/master-com.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Speak to Lead is a transformative communication course designed to help you elevate your voice and presence as a leader. Through this program, you'll learn how to communicate with impact, connect with purpose, and inspire action — whether you're speaking on stage, in a boardroom, or leading your team. This comprehensive course combines practical techniques with psychological insights to build your confidence and commanding presence.",
     whatYouLearn: [
@@ -396,8 +396,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Self-discovery, confidence building, grooming, and professional image.",
     image: "/art-science.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Transform your personality and unlock your true potential. This course combines psychological principles with practical techniques to help you build unshakeable confidence, develop a powerful professional image, and create lasting impressions. Learn the science behind personality development and apply proven strategies to become the best version of yourself.",
     whatYouLearn: [
@@ -428,8 +428,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Understand the psychological principles and emotional intelligence powering effective communication.",
     image: "/psycology.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Discover the hidden psychology behind influence and persuasion. This course reveals the principles that drive human behavior and decision-making, enabling you to communicate more effectively and ethically influence others. Learn from behavioral psychology, neuroscience, and real-world case studies to master the art of influence.",
     whatYouLearn: [
@@ -460,8 +460,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Advanced techniques for public speaking, persuasion, and developing a commanding personality.",
     image: "/leadership.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Elevate your leadership game with advanced communication strategies designed for executives and senior leaders. This course focuses on developing executive presence, mastering high-stakes communication, and building the gravitas that commands respect. Learn from industry leaders and apply proven frameworks to transform your leadership impact.",
     whatYouLearn: [
@@ -492,8 +492,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Boost self-awareness, empathy, and coping strategies—transforming mindsets for sustainable growth.",
     image: "/emotional.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Build emotional resilience and master the skills that separate exceptional leaders from the rest. This masterclass combines emotional intelligence training with resilience-building techniques to help you navigate challenges, build stronger relationships, and create sustainable success. Learn to lead with empathy while maintaining your own emotional well-being.",
     whatYouLearn: [
@@ -524,8 +524,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Techniques to boost self-esteem, body language, and influence.",
     image: "/confident.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Unlock your natural charisma and build unshakeable self-belief. This course is designed to help you overcome self-doubt, develop magnetic presence, and influence others through authentic confidence. Through practical exercises and psychological insights, you'll transform how you see yourself and how others perceive you.",
     whatYouLearn: [
@@ -556,8 +556,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Professional writing, email etiquette, meeting communication, and stakeholder management.",
     image: "/buisness.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Master the communication skills that drive business success. From crafting compelling emails to leading productive meetings and managing stakeholder relationships, this course covers all aspects of professional communication. Learn frameworks and best practices used by top organizations worldwide.",
     whatYouLearn: [
@@ -588,8 +588,8 @@ export const coursesData: CourseDetail[] = [
     description:
       "Techniques for ethically persuading and influencing others in professional and personal life.",
     image: "/persuasion.png",
-    price: 2499,
-    originalPrice: 5000,
+    price: 399,
+    originalPrice: 1679,
     overview:
       "Learn the science and art of ethical persuasion. This course teaches you how to influence others through authentic communication, psychological principles, and proven persuasion techniques. Master the ability to inspire action while maintaining integrity and building trust.",
     whatYouLearn: [

@@ -37,6 +37,9 @@ export const metadata: Metadata = {
   title: " Trupti Warjurkar - Become the communiucator you were meant to be",
   description:
     "Helping you unlock your true potential through impactful communication and leadership skills.",
+    other : {
+      "google-site-verification": "google055bb49787ed1c0d.html"
+    }
 };
 
 export default function RootLayout({
@@ -59,6 +62,11 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1711575312859558');
 fbq('track', 'PageView');`}
       </Script>
+
+      <meta
+          name="google-site-verification"
+          content="google055bb49787ed1c0d.html"
+        />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${poppins.variable} ${arizonia.variable} antialiased`}

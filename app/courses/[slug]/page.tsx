@@ -279,7 +279,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const slug = params.slug
+  const slug = await params.slug
   const course = getCourseBySlug(slug)
   if (!course) {
     return {
