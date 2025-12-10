@@ -34,44 +34,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: " Trupti Warjurkar - Become the communiucator you were meant to be",
+  title: "Trupti Warjurkar - Become the communicator you were meant to be",
   description:
     "Helping you unlock your true potential through impactful communication and leadership skills.",
-    other : {
-      "google-site-verification": "google055bb49787ed1c0d.html"
-    }
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      {/* Meta Pixel script - loads after the page becomes interactive */}
+
+      {/* Facebook Pixel */}
       <Script id="fb-pixel" strategy="afterInteractive">
         {`!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1711575312859558');
-fbq('track', 'PageView');`}
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '1711575312859558');
+          fbq('track', 'PageView');`}
       </Script>
-
-      <meta
-          name="google-site-verification"
-          content="google055bb49787ed1c0d.html"
-        />
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} ${poppins.variable} ${arizonia.variable} antialiased`}
       >
-        {/* noscript fallback */}
+        {/* Facebook Pixel noscript fallback */}
         <noscript>
           <img
             height="1"
