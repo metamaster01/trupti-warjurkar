@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   output: "standalone",
   // trailingSlash: true,           // 👈 forces /page/index.html
   images: { unoptimized: true },
-  eslint: { ignoreDuringBuilds: true },
+  // eslint: { ignoreDuringBuilds: true },
 
   async headers() {
   return [
