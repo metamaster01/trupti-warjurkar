@@ -37,6 +37,10 @@ export const metadata: Metadata = {
   title: "Trupti Warjurkar - Become the communicator you were meant to be",
   description:
     "Helping you unlock your true potential through impactful communication and leadership skills.",
+  other: {
+    "google-site-verification":
+      "ZEOagj_iEy1UOio7wIGLAMzytnVMbbZTF0uqR2xWdQ4",
+  }, 
 };
 
 export default function RootLayout({
